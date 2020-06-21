@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(89, 0, 255, 0.747);
+}
+
+
+/* The main div */
+.main {
+    padding: 10px;
+    background-color: #fff;
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 7px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.411);
+}
+.main h1 {
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(89, 0, 255);
+}
+.input-grp {
+    margin-top: 0px;
+    margin-left: 40px;
+    padding: 10px;
+}
+label {
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+input {
+    display: block;
+    width: 60%;
+    padding: 7px;
+    outline: none;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 3px;
+}
+input::placeholder {
+    font-size: 17px;
+}
+#submit {
+    margin: auto;
+    /* position: static; */
+    margin-top: 10px;
+    padding: 10px;
+    width: 25%;
+    font-size: 20px;
+    color: rgba(89, 0, 255, 0.747);
+    border: 2px solid rgba(89, 0, 255, 0.747);
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+#submit:hover {
+    background-color: rgba(89, 0, 255, 0.747);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Styling for message to appear for valid and invalid inputs */
+.success {
+    border: 2px solid lawngreen;
+    transition: all 0.3s ease;
+}
+.error {
+    border: 2px solid rgb(255, 128, 128);
+    transition: all 0.3s ease;
+}
+span {
+    margin-left: 0px;
+    margin: 0px;
+    display: none;
+    font-size: 17px;
+}
+.success-msg {
+    display: block;
+    width: 85%;
+    color: rgb(0, 209, 0);
+    font-weight: bolder;
+    background-color: rgba(200, 255, 149, 0.445);
+    padding: 10px;
+    position: relative;
+    left: 7px;
+    bottom: 20px;
+}
+.error-msg {
+    display: block;
+    width: 85%;
+    color: red;
+    font-weight: normal;
+    background-color: rgba(255, 217, 217, 0.61);
+    padding: 10px;
+    position: relative;
+    left: 7px;
+    bottom: 20px;
+}
+.fa-check-circle {
+    position: relative;
+    left: 238px;
+    bottom: 44px;
+    font-weight: bolder;
+    color: rgb(158, 236, 0);
+    transition: all 0.1s ease;
+}
+.fa-exclamation-circle {
+    position: relative;
+    left: 238px;
+    bottom: 44px;
+    color: red;
+    transition: all 0.1s ease;
+}
+.fa-eye, .fa-eye-slash {
+    cursor: pointer;
+    position: relative;
+    bottom: 43px;
+    left: 280px;
+    font-size: 18px !important;
+    font-weight: bolder;
+}
+.fa-eye-slash {
+    color: rgb(99, 99, 99);
+}

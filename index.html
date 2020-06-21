@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Validation</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+
+	<div class="main">
+		
+		<h1>Signup Form</h1>
+		
+		<div class="input-grp">
+
+			<form action="#result">
+
+				<label for="name">Username:</label>		
+				<input type="text" name="name" id="name" placeholder="raman99">
+				<i class="n-icon fa"></i>
+				<span class="name">Error Message</span>
+					
+				<label for="email">Email Address:</label>
+				<input type="email" name="email" id="email" placeholder="raman@example.com" required>
+				<i class="e-icon fa"></i>
+				<span class="email">Error Message</span>
+				
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="pwd" required>
+                <i class="p-icon fa"></i>
+                <i class="eye fa fa-eye"></i>
+                <span class="pwd">Error Message</span>
+	
+				<label for="password">Confirm Password:</label>
+				<input type="password" name="password" id="confirm-pwd" required>
+				<i class="cp-icon fa"></i>
+				<span class="confirm-pwd">Error Message</span>
+
+				<label for="phone">Mobile no:</label>
+				<input type="text" name="phone" id="phone" required>
+				<i class="phone-icon fa"></i>
+				<span class="phone">Error Message</span>
+
+				<input type="submit" id="submit">
+
+			</form>	
+
+		</div>
+		
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="script.js"></script>
+	
+</body>
+</html>
